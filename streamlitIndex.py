@@ -1,4 +1,5 @@
 import streamlit as st
+from datetime import time
 
-age = st.slider('How old are you?', 0, 130, 25)
-st.write("I'm ", age, 'years old')
+appointment = st.slider("Schedule your appointment:", value=(time(11, 30), time(12, 45)))
+st.write("You're scheduled for:", appointment)
