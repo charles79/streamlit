@@ -5,9 +5,11 @@ from datetime import datetime
 st.text('Primera APP de prueba')
 
 with st.form(key='my_form'):
-username = st.text_input('Username: ')
-password = st.text_input('Password: ')
-st.form_submit_button('Login')
+  username = st.text_input('Username: ')
+  password = st.text_input('Password: ')
+  st.form_submit_button('Login')
+  if submitted:
+    st.write("Usuario enviado: ", username, ", contraseña: ", password)
 
 st.text('----------------------------------------')
 
